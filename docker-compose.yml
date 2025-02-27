@@ -1,0 +1,10 @@
+version: '3'
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "3002:3001"  # Exponiendo el puerto 3001 del contenedor a 3002 en el host
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
